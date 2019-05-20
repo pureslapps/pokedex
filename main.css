@@ -1,0 +1,15 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url('https://i.kym-cdn.com/photos/images/original/000/894/497/f08.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-blend-mode:
+  background-image:radial-gradient(black,);
+}
