@@ -19,34 +19,34 @@
   }
 }
 
-const BASEURL = 'https://www.pokemon.com/'
-
-requestAPI = () => {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     data = JSON.parse(this.responseText)
-     for (item in data)
-      let pokemon = new Pokemon {
-       name:data['name']
-       hp:data['hp']
-       attk:data['attk']
-       def:data['def']
-       abilities:data['abilities']
-     }
-    }
-  };
-  xhttp.open("GET", "https://www.pokemon.com/us/pokedex/", true);
-  xhttp.send();
-}
-
-requestAPI()
-
-class pokemon = {
-  constructor (name, hp, attk, def, abilities)
-  this.name = name
-  this.hp = hp
-  this.attk = attk
-  this. def = def
-  this.abilites = abilities
-}
+// const BASEURL = 'https://www.pokemon.com/'
+//
+// requestAPI = () => {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//      data = JSON.parse(this.responseText)
+//      for (item in data)
+//       let pokemon = new Pokemon {
+//        name:data['name']
+//        hp:data['hp']
+//        attk:data['attk']
+//        def:data['def']
+//        abilities:data['abilities']
+//      }
+//     }
+//   };
+//   xhttp.open("GET", "https://www.pokemon.com/us/pokedex/", true);
+//   xhttp.send();
+// }
+//
+// requestAPI()
+//
+// class pokemon = {
+//   constructor (name, hp, attk, def, abilities)
+//   this.name = name
+//   this.hp = hp
+//   this.attk = attk
+//   this. def = def
+//   this.abilites = abilities
+// }
