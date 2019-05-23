@@ -39,6 +39,14 @@ pokeDex = () => {
 
 
 
+i = 0
+ for (i, i=<802, i++)
+//// keep looking up for loops
+// use the for loop to display data
+// hardest part is geeting the correct data to show
+// styling is easier
+
+
 
 
 
