@@ -1,16 +1,3 @@
-const app = getElementById('root')
-
-const logo = document.createElement('img')
-logo.src = 'http://pngimg.com/uploads/pokemon_logo/pokemon_logo_PNG6.png'
-
-const container = document.createElement('div')
-container.setAttribute('class', 'container')
-
-app.appendChild(logo)
-app.appendChild(container)
-
-
-
 pokeDex = () => {
   var pokeSearch = prompt('Enter a pokemon name or id');
   var xhttp = new XMLHttpRequest();
@@ -25,6 +12,7 @@ pokeDex = () => {
         defense: data ['stats']['3']['base_stat'],
         ability: data['abilities']['0']['ability']['name'],
           }
+          displayPokemon()
         }
       }
     if (isNaN(pokeSearch)) {
@@ -34,52 +22,25 @@ pokeDex = () => {
     }
     xhttp.send();
     console.log(`https://fizal.me/pokeapi/api/v2/id/${pokeSearch}.json`)
-
+}
     pokeDex()
 
+    displayPokemon = () => {
+        let cont = document.getElementById('container')
+        let name = document.getElementById('pokeName')
+        let health = document.getElementById('pokeHealth')
+        let attack = document.getElementById('pokeATTK')
+        let defense = document.getElementById('pokeDEF')
+        let ability = document.getElementById('pokeABL')
 
-
-i = 0
- for (i, i=<802, i++)
-//// keep looking up for loops
-// use the for loop to display data
-// hardest part is geeting the correct data to show
-// styling is easier
-
-
-
-
-
-
-
-
-
-
-    // displayPokemon = () => {
-      //   let cont = document.createElement('div')
-      //   let h1 = document.createElement('h1')
-      //   let p1 = document.createElement('p')
-      //
-      //   h1.innerText = pokemon ['name']
-      //   p1.innerText = pokemon ['health']
-      //   cont.appendChild(h1)
-      //   cont.appendChild(p1)
-      //   document.body.appendChild(cont)
-      // }
-      //
-      // displayPokemon()
-
-
-      //
-      // class pokemon  {
-        //      constructor(name, health, attack, defense, abilities){
-          //       this.name = name
-          //       this.health = hp
-          //       this.attack = attack
-          //       this.defense = defense
-          //       this.abilites = abilities
-          //       }
-          //     }
-          //
-          //
-          //   };
+        name.innerText = ('name: ' + pokemon['name'])
+        health.innerText = ('HP:' + pokemon['health'])
+        attack.innerText = ('ATTK:' + pokemon['attack'])
+        defense.innerText = ('DEF: ' + pokemon['defense'])
+        ability.innerText = ('ABL: ' + pokemon['ability'])
+        cont.appendChild(name)
+        cont.appendChild(health)
+        cont.appendChild(attack)
+        cont.appendChild(defense)
+        cont.appendChild(ability)
+    }

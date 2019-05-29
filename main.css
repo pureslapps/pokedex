@@ -1,4 +1,4 @@
-body, html {
+body, html{
   height: 100%;
   margin: 0;
   background-image: url('https://i.kym-cdn.com/photos/images/original/000/894/497/f08.jpg');
@@ -8,11 +8,82 @@ body, html {
   background-size: cover;
   overflow: hidden;
   background-blend-mode:
-  background-image:radial-gradient(black,);
 }
 
 h1 {
-  height: 500px;
+  height: 50px;
   color: black;
   text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#empty-space {
+  padding: 100px;
+}
+
+#container {
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 20%;
+}
+
+#pokeName {
+  height: 100px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: red;
+  text-align: center;
+  font-size: 45px;
+}
+
+#pokeHealth {
+  height: 50px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: red;
+  text-align: center;
+  font-size: 25px;
+  display: grid;
+  padding: 25px;
+  margin: 15px;
+}
+
+#pokeATTK {
+  height: 50px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: red;
+  text-align: center;
+  font-size: 25px;
+  display: grid;
+  padding: 25px;
+  margin: 15px;
+}
+
+#pokeDEF {
+  height: 50px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: red;
+  text-align: center;
+  font-size: 25px;
+  display: grid;
+  padding: 25px;
+  margin: 15px;
+}
+
+#pokeABL {
+  height: 50px;
+  width: 200px;
+  border-radius: 20%;
+  background-color: red;
+  text-align: center;
+  font-size: 25px;
+  display: grid;
+  padding: 25px;
+  margin: 15px;
 }
