@@ -13,6 +13,7 @@ pokeDex = () => {
         ability: data['abilities']['0']['ability']['name'],
           }
           displayPokemon()
+          bashKetchup()
         }
       }
     if (isNaN(pokeSearch)) {
@@ -21,7 +22,7 @@ pokeDex = () => {
       xhttp.open("GET", `https://fizal.me/pokeapi/api/v2/id/${pokeSearch}.json`, true);
     }
     xhttp.send();
-    console.log(`https://fizal.me/pokeapi/api/v2/id/${pokeSearch}.json`)
+
 }
     pokeDex()
 
@@ -44,3 +45,9 @@ pokeDex = () => {
         cont.appendChild(defense)
         cont.appendChild(ability)
     }
+
+    bashKetchup = () => {
+      pokemon: []
+      console.log(`https://fizal.me/pokeapi/api/v2/id/${pokeSearch}.json`)
+
+  }
