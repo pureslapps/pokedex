@@ -9,30 +9,11 @@ body, html{
   background-blend-mode:
 }
 
-ul {
-  display: inline-block;
-}
-
-.ul input[type=text] {
-  float: right;
-  border: thcik solid black;
-  padding: 10px;
-  height: 50px;
-  margin-top: 15px;
-}
-
 li {
   display: inline-block;
   float: left;
   padding: 10px;
-  font-size: 25px;
-  font-family: 'comic sans MS';
-  color: #ffcc03;
-  background-color: blue;
-}
-
-img {
-  background-color:
+  background-color: grey;
 }
 
 h1 {
@@ -102,18 +83,6 @@ p {
 }
 
 #pokeABL {
-  height: 50px;
-  width: 200px;
-  border-radius: 20%;
-  background-color: red;
-  text-align: center;
-  font-size: 25px;
-  display: grid;
-  padding: 25px;
-  margin: 15px;
-}
-
-#pokePic {
   height: 50px;
   width: 200px;
   border-radius: 20%;

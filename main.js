@@ -11,9 +11,9 @@ pokeDex = () => {
         attack: data['stats']['4']['base_stat'],
         defense: data ['stats']['3']['base_stat'],
         ability: data['abilities']['0']['ability']['name'],
+        image: data['sprites']['front_default'],
           }
           displayPokemon()
-          bashKetchup()
         }
       }
     if (isNaN(pokeSearch)) {
@@ -33,12 +33,14 @@ pokeDex = () => {
         let attack = document.getElementById('pokeATTK')
         let defense = document.getElementById('pokeDEF')
         let ability = document.getElementById('pokeABL')
+        let img = document.getElementById('pokePic')
 
         name.innerText = ('name: ' + pokemon['name'])
         health.innerText = ('HP:' + pokemon['health'])
         attack.innerText = ('ATTK:' + pokemon['attack'])
         defense.innerText = ('DEF: ' + pokemon['defense'])
         ability.innerText = ('ABL: ' + pokemon['ability'])
+        img.setAttribute('src', `url("${pokemon['image']}")`)
         cont.appendChild(name)
         cont.appendChild(health)
         cont.appendChild(attack)
@@ -46,8 +48,4 @@ pokeDex = () => {
         cont.appendChild(ability)
     }
 
-    bashKetchup = () => {
-      pokemon: []
-      console.log(`https://fizal.me/pokeapi/api/v2/id/${pokeSearch}.json`)
-
-  }
+// document.getElementById('myInput').addEventListener("search", displayPokemon)
